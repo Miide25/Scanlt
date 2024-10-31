@@ -52,7 +52,10 @@ document.getElementById('signinForm').onsubmit = function(event) {
         const userData = JSON.parse(storedUser);
         if (userData.password === password) {
             alert(`Welcome back, ${userData.name}!`);
-            // Redirect to another page or perform other actions
+            
+            // Redirect to another page
+            window.location.href = 'dashboard.html'; // Change this to your desired page
+            
         } else {
             alert('Incorrect password. Please try again.');
         }
